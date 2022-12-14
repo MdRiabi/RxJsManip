@@ -78,3 +78,25 @@ const observable11 = new Observable((subscriber) =>{
     subscription.unsubscribe()
  },5000)
  console.log('after')
+
+
+
+
+ //arry handling
+ var arr = [10,11,20,25,30,52,44,63,42,52,61]
+ let mapArr = arr.map((value)=>{
+ return `map change the values of the initial array + ${value+15}`
+ })
+ console.log(mapArr)
+
+ let arrfilter = arr.filter((filterValue)=>{
+    return filterValue>60
+
+ })
+ console.log(arrfilter)
+
+ // reduce function make math manip over the array element
+ let reduceArr = arr.reduce((val1, val2) =>{
+    return val1 + val2
+ })
+ console.log(`the resumlt of reduce function: ${reduceArr}`)
